@@ -1,0 +1,102 @@
+
+.center {
+  height: 22vh;
+  width: 30vw;
+  position: relative;
+  padding: 50px 50px;
+  background: #000;
+  border-radius: 10px;
+  margin:10vh 25vw;
+  margin-left:35vw;
+}
+.center h1 {
+  font-size: 2em;
+  border-left: 5px solid dodgerblue;
+  padding: 10px;
+  color: #000;
+  letter-spacing: 5px;
+  margin-bottom: 60px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.center .inputbox {
+  position: relative;
+  /* width: 400px; */
+  height: 50px;
+  margin-bottom: 50px;
+  /* background-color: red; */
+}
+.center .inputbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid #000;
+  outline: none;
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  color: black(95, 95, 95);
+  background-color: white;
+}
+
+.center .inputbox #submit_button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid #000;
+  outline: none;
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  color: black(95, 95, 95);
+  background-color: white;
+}
+.center .inputbox #submit_button :hover{
+    background-color: rgb(165, 159, 159);
+    cursor: pointer;
+}
+
+
+.center .inputbox:last-child {
+  margin-bottom: 0;
+}
+.center .inputbox span {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  font-size: 1em;
+  transition: 0.6s;
+  /* font-family: sans-serif; */
+  line-height: 15px;
+  color:black;
+}
+.center .inputbox input:focus ~ span,
+.center .inputbox input:valid ~ span {
+  transform: translateX(-13px) translateY(-35px);
+  font-size: 1em;
+  color:white
+}
+
+#submit_button :hover{
+  cursor: pointer;
+  background-color: rgb(165, 159, 159);
+}
+
+
+#plots_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-template-rows: repeat(3, 1fr); /* Three rows */
+  gap: 10px; /* Adjust the gap between grid items as needed */
+  margin: 5vh 5vw;
+  margin-left:18vw;
+}
+.each_plot {
+  border: 1px solid #ccc; 
+  padding: 10px;
+
+}
